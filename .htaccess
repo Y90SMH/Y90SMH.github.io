@@ -1,0 +1,83 @@
+# Deny access for FCC
+Deny from 192.133.125.0/24
+Deny from 165.135.0.0/16
+Deny from 192.104.54.0/24
+Deny from 4.21.126.0/24
+Deny from 65.125.25.64/26
+Deny from 208.23.64.0/25
+Deny from 2620:0:610::/48
+Deny from 2600:803:230::/48
+
+# Default Charset
+AddDefaultCharset Off
+AddCharset UTF-8 .html .php .css .js
+
+# Default Language
+DefaultLanguage en-GB
+
+# Protect the .htaccess and wp-config.php file.
+<Files .htaccess>
+	Order Allow,Deny
+	Deny from all
+</Files>
+
+# Protect site from unauthorised content sources.
+<IfModule mod_headers.c>
+	Header unset Server
+	Header unset X-Pingback
+	Header unset Accept-Ranges
+	Header set Content-Security-Policy-Report-Only "default-src 'self'; frame-src 'none'; font-src 'self'; img-src 'self' data:; media-src 'none'; object-src 'none'; script-src 'self'; style-src 'self';"
+</IfModule>
+
+# Declare expiration term for common file types.
+<IfModule mod_expires.c>
+	ExpiresActive On
+	ExpiresByType application/ico "access plus 6 month"
+	ExpiresByType application/javascript "access plus 2 month"
+	ExpiresByType application/rss+xml "access plus 2 month"
+	ExpiresByType application/x-ico "access plus 12 month"
+	ExpiresByType application/x-javascript "access plus 2 month"
+	ExpiresByType application/xhtml+xml "access plus 2 month"
+	ExpiresByType application/xml "access plus 2 month"
+	ExpiresByType image/gif "access 2 month"
+	ExpiresByType image/icon "access plus 12 month"
+	ExpiresByType image/jpg "access 2 month"
+	ExpiresByType image/jpeg "access 2 month"
+	ExpiresByType image/png "access 2 month"
+	ExpiresByType image/x-icon "access plus 12 month"
+	ExpiresByType image/vnd.microsoft.icon "access plus 12 month"
+	ExpiresByType text/css "access 2 month"
+	ExpiresByType text/html "access 2 month"
+	ExpiresByType text/js "access 2 month"
+	ExpiresByType text/javascript "access plus 2 month"
+	ExpiresByType text/plain "access 2 month"
+	ExpiresByType text/xml "access 2 month"
+</IfModule>
+
+# Declare gZip filters.
+AddOutputFilterByType DEFLATE application/ico
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/rss+xml
+AddOutputFilterByType DEFLATE application/x-ico
+AddOutputFilterByType DEFLATE application/x-javascript
+AddOutputFilterByType DEFLATE application/xhtml+xml
+AddOutputFilterByType DEFLATE application/xml
+AddOutputFilterByType DEFLATE image/gif
+AddOutputFilterByType DEFLATE image/icon
+AddOutputFilterByType DEFLATE image/jpg
+AddOutputFilterByType DEFLATE image/jpeg
+AddOutputFilterByType DEFLATE image/png
+AddOutputFilterByType DEFLATE image/x-icon
+AddOutputFilterByType DEFLATe image/vnd.microsoft.icon
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/js
+AddOutputFilterByType DEFLATE text/javascript
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/xml
+
+# Remove gZip related browser bugs.
+BrowserMatch ^Mozilla/4 gzip-only-text/html
+BrowserMatch ^Mozilla/4\.0[678] no-gzip
+BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+Header append Vary User-Agent
