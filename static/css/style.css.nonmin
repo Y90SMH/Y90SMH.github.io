@@ -25,7 +25,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 }
 
 /* Styles */
-html { background: #F6F6F6; color: #333333; font-family: Ubuntu, sans-serif; font-size: 16px; font-weight: 400; }
+html { background: #F6F6F6; color: #333333; font-family: Ubuntu, sans-serif; font-size: 16px; font-weight: 300; }
 strong { font-weight: 500; }
 :selection { background-color: #837662; color: #FFFFFF; }
 #wrapper { margin: 0 auto; }
