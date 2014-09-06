@@ -40,3 +40,8 @@ strong { font-weight: 500; }
 .wrap ul { list-style: square; list-style-position: inside; margin: 0 0 16px 0; }
 .wrap ul li { line-height: 20px; margin: 0 0 0 16px; }
 .wrap ul span { display: block; line-height: 20px; margin: 0 0 8px 0; }
+@media only screen and (max-device-width: 480px) {
+	.wrap p { font-size: 18px; line-height: 24px; margin: 0 0 18px 0; }
+	.wrap ul span { font-size: 18px; line-height: 24px; }
+	.wrap ul li { line-height: 24px; }
+}
