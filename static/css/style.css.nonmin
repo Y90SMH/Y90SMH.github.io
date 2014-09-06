@@ -32,7 +32,7 @@ strong { font-weight: 500; }
 #masthead { background: #837662; }
 .wrap { box-sizing: border-box; display: block; margin: 0 auto; max-width: 768px; padding: 16px; }
 .site-name { display: block; }
-.wrap .site-name a { color: #FFFFFF; font-size: 36px; font-weight: 500; line-height: 40px; text-decoration: none; text-transform: uppercase; }
+.wrap .site-name a { color: #FFFFFF; font-size: 36px; font-weight: 500; line-height: 40px; text-decoration: none; }
 .wrap h1 { font-size: 32px; font-weight: 500; line-height: 40px; margin: 0 0 8px 0; }
 .wrap h2 { font-size: 24px; font-weight: 500; line-height: 30px; margin: 0 0 4px 0; padding: 8px 0 0 0; }
 .wrap p { font-size: 16px; line-height: 20px; margin: 0 0 16px 0; }
