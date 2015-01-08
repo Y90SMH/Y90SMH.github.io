@@ -19,7 +19,7 @@ a { color: #092142; text-decoration: none; }
 	.entry:last-of-type { margin: 0; }
 	.entry-title { color: #091242; font-family: Impact, sans-serif; font-size: 24px; font-weight: normal; line-height: 36px; margin-bottom: 8px; }
 	.entry p { color: #666666; font-size: 16px; line-height: 24px; margin-bottom: 24px; }
-	.entry p + ul { margin-bottom: 12px; }
+	.entry p.shallowmargin { margin-bottom: 6px; }
 	.entry p a { border-bottom: 1px solid #CCCCCC; }
 	.entry p a:hover { border-color: #091242; }
 	.entry ul { margin-bottom: 24px; }
