@@ -4,7 +4,7 @@ body { font-family: Century Gothic, sans-serif; height: 100%; width: 100%; }
 a { color: #092142; text-decoration: none; }
 #sidebar { display: block; padding: 40px 0 40px 80px; position: absolute; width: 400px; }
 	#author-image { border-radius: 80px; display: block; margin-bottom: 20px; }
-	#author-title { font-family: Impact, sans-serif; font-size: 24px; font-weight: normal; line-height: 30px; }
+	#author-title { font-size: 24px; font-weight: bold; line-height: 30px; }
 		#author-name { color: #091242; }
 	#author-description { color: #666666; font-size: 16px; font-weight: normal; line-height: 24px; }
 	#menu { margin: 40px 0 0 0; }
@@ -17,7 +17,7 @@ a { color: #092142; text-decoration: none; }
 	border-left: 1px solid #EEEEEE; display: block; margin-left: 400px; min-height: 1024px; padding: 40px; position: relative; }
 	.entry { margin: 0 0 2em 0; max-width: 600px; }
 	.entry:last-of-type { margin: 0; }
-	.entry-title { color: #091242; font-family: Impact, sans-serif; font-size: 24px; font-weight: normal; line-height: 36px; margin-bottom: 8px; }
+	.entry-title { color: #091242; font-size: 24px; font-weight: bold; line-height: 36px; margin-bottom: 8px; }
 	.entry p { color: #666666; font-size: 16px; line-height: 24px; margin-bottom: 24px; }
 	.entry p.shallowmargin { margin-bottom: 6px; }
 	.entry p a { border-bottom: 1px solid #CCCCCC; }
