@@ -14,46 +14,18 @@
         <meta name="apple-itunes-app" content="app-id=362872995">
 		<meta name="description" content="Demo code to test for iOS apps on a users device and react accordingly.">
 		<meta name="viewport" content="width=device-width, minimum-scale=1.0">
+
+        <script type="text/javascript">
+            function changeText() {
+                showElementContent(document.getElementById('html_body').innerHTML);
+            }
+
+            function showElementContent(content) {
+                document.body.appendChild(document.createTextNode("// " + content));
+            }
+        </script>
 	</head>
-	<body>
-		<a href="maps://" onclick="clickHandler()">Open an installed app</a>
-		<br/><br/>
-		<a href="xmapsx://" onclick="clickHandler()">App not installed</a>
-		<br/>
-		<script type="text/javascript">
-			var hideShowCount = 0 ;
-			
-			window.addEventListener("pagehide", function() {
-				hideShowCount++;
-				showEventTime('pagehide');
-			});
-			
-			window.addEventListener("pageshow", function() {
-				hideShowCount++;
-				showEventTime('pageshow');
-			});
-			
-			function clickHandler(){
-				var hideShowCountAtClick = hideShowCount;
-				showEventTime('click');
-				setTimeout(function () {
-					showEventTime('timeout function '+(hideShowCount-hideShowCountAtClick)+' hide/show events');
-					if (hideShowCount == hideShowCountAtClick){
-						// app is not installed, go to App Store
-						window.location = 'http://itunes.apple.com/app';
-					}
-				}, 1000);
-			}
-			
-			function currentTime() {
-				return Date.now() / 1000;
-			}
-			
-			function showEventTime(event) {
-				var time = currentTime();
-				document.body.appendChild(document.createElement('br'));
-				document.body.appendChild(document.createTextNode(time+' '+event));
-			}
-		</script>
+	<body id="html_body">
+        <input onclick="changeText()" type="button" value="View Body">
 	</body>
 </html>
