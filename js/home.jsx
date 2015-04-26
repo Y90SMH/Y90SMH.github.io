@@ -46,7 +46,7 @@ var Articles = React.createClass({
 		return ( <ul>{nodes}</ul> );
 	}
 });
-var Article = React.createClass({ render: function() { return ( <li><a href={this.props.href} title={"Article by " + this.props.author}>{this.props.text}</a></li> ); } });
+var Article = React.createClass({ render: function() { return ( <li><a href={this.props.href} target="_blank" title={"Article by " + this.props.author}>{this.props.text}</a></li> ); } });
 
 React.render(
 	<ArticlesBox url="json/articles.json" pollInterval={5000} />,
