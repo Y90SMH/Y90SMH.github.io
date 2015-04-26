@@ -12,7 +12,7 @@ function fetchJSONFile(path, callback) {
 var AchievementsBox = React.createClass({
 	componentDidMount: function() {
 		this.loadContentFromServer();
-		setInterval(this.loadContentFromServer, this.props.pollInterval);
+		//setInterval(this.loadContentFromServer, this.props.pollInterval);
 	},
 	getInitialState: function() { return {data: []}; },
 	loadContentFromServer: function() { fetchJSONFile(this.props.url, function(data){this.setState({data: data});}.bind(this)); },
@@ -27,14 +27,14 @@ var Achievements = React.createClass({
 var Achievement = React.createClass({ render: function() { return ( <li>{this.props.month}, {this.props.year} &ndash; {this.props.text}</li> ); } });
 
 React.render(
-	<AchievementsBox url="json/achievements.json" pollInterval={5000} />,
+	<AchievementsBox url="json/achievements.json" />,
 	document.getElementById('achievements')
 );
 
 var ArticlesBox = React.createClass({
 	componentDidMount: function() {
 		this.loadContentFromServer();
-		setInterval(this.loadContentFromServer, this.props.pollInterval);
+		//setInterval(this.loadContentFromServer, this.props.pollInterval);
 	},
 	getInitialState: function() { return {data: []}; },
 	loadContentFromServer: function() { fetchJSONFile(this.props.url, function(data){this.setState({data: data});}.bind(this)); },
@@ -49,6 +49,6 @@ var Articles = React.createClass({
 var Article = React.createClass({ render: function() { return ( <li><a href={this.props.href} target="_blank" title={"Article by " + this.props.author}>{this.props.text}</a></li> ); } });
 
 React.render(
-	<ArticlesBox url="json/articles.json" pollInterval={5000} />,
+	<ArticlesBox url="json/articles.json" />,
 	document.getElementById('articles')
 );
