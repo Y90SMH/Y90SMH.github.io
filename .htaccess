@@ -17,6 +17,9 @@ DefaultLanguage en-GB
 	Header unset X-Pingback
 	Header unset Accept-Ranges
 	Header set Content-Security-Policy-Report-Only "default-src 'self'; frame-src 'none'; font-src 'self'; img-src 'self' data:; media-src 'none'; object-src 'none'; script-src 'self'; style-src 'self';"
+	Header set x-frame-options: SAMEORIGIN
+	Header set X-XSS-Protection: "1; mode=block"
+	Header set X-Content-Type-Options: nosniff
 </IfModule>
 
 # Declare expiration term for common file types.
