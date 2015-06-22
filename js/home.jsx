@@ -52,3 +52,25 @@ React.render(
 	<ArticlesBox url="json/articles.json" />,
 	document.getElementById('articles')
 );
+
+var RepositoriesBox = React.createClass({
+	componentDidMount: function() {
+		this.loadContentFromServer();
+		//setInterval(this.loadContentFromServer, this.props.pollInterval);
+	},
+	getInitialState: function() { return {data: []}; },
+	loadContentFromServer: function() { fetchJSONFile(this.props.url, function(data){this.setState({data: data});}.bind(this)); },
+	render: function() { return ( <Repositories data={this.state.data} /> ); }
+});
+var Repositories = React.createClass({
+	render: function() {
+		var nodes = this.props.data.map(function (repo) {return (<Repo name={repo.name} html_url={repo.html_url} />);});
+		return ( <ul>{nodes}</ul> );
+	}
+});
+var Repo = React.createClass({ render: function() { return ( <li><a href={this.props.html_url}>{this.props.name}</a></li> ); } });
+
+React.render(
+	<RepositoriesBox url="https://api.github.com/users/Y90SMH/repos" />,
+	document.getElementById('repositories')
+);
