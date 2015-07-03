@@ -13,13 +13,13 @@ DefaultLanguage en-GB
 
 # Protect site from unauthorised content sources.
 <IfModule mod_headers.c>
+	Header unset Accept-Ranges
 	Header unset Server
 	Header unset X-Pingback
-	Header unset Accept-Ranges
 	Header set Content-Security-Policy-Report-Only "default-src 'self'; frame-src 'none'; font-src 'self'; img-src 'self' data:; media-src 'none'; object-src 'none'; script-src 'self'; style-src 'self';"
-	Header set x-frame-options: SAMEORIGIN
-	Header set X-XSS-Protection: "1; mode=block"
 	Header set X-Content-Type-Options: nosniff
+	Header set X-Frame-Options: SAMEORIGIN
+	Header set X-XSS-Protection: "1; mode=block"
 </IfModule>
 
 # Declare expiration term for common file types.
@@ -27,6 +27,7 @@ DefaultLanguage en-GB
 	ExpiresActive On
 	ExpiresByType application/ico "access plus 12 month"
 	ExpiresByType application/javascript "access plus 3 month"
+	ExpiresByType application/json "access plus 3 month"
 	ExpiresByType application/rss+xml "access plus 3 month"
 	ExpiresByType application/vnd.ms-fontobject "access plus 3 month"
 	ExpiresByType application/x-font-ttf "access plus 3 month"
@@ -55,6 +56,7 @@ DefaultLanguage en-GB
 # Declare gZip filters.
 AddOutputFilterByType DEFLATE application/ico
 AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/json
 AddOutputFilterByType DEFLATE application/rss+xml
 AddOutputFilterByType DEFLATE application/vnd.ms-fontobject
 AddOutputFilterByType DEFLATE application/x-font-ttf
