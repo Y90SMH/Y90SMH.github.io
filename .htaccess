@@ -18,9 +18,9 @@ DefaultLanguage en-GB
 	Header unset Accept-Ranges
 	Header unset Server
 	Header unset X-Pingback
-	Header set Content-Security-Policy-Report-Only "default-src 'self'; frame-src 'none'; font-src 'self'; img-src 'self' data:; media-src 'none'; object-src 'none'; script-src 'self'; style-src 'self';"
+	Header set Content-Security-Policy-Report-Only "default-src 'self'; frame-ancestors 'none'; frame-src 'none'; font-src 'self'; img-src 'self' data:; media-src 'none'; object-src 'none'; script-src 'self'; style-src 'self';"
 	Header set X-Content-Type-Options: nosniff
-	Header set X-Frame-Options: SAMEORIGIN
+	Header set X-Frame-Options: DENY
 	Header set X-XSS-Protection: "1; mode=block"
 </IfModule>
 
