@@ -5,4 +5,8 @@ function fetchJSONFile(path,callback){var httpRequest=new XMLHttpRequest();httpR
 fetchJSONFile('https://api.github.com/users/Y90SMH/repos', function(data){
     // do something with your data
     console.log(data);
+    
+    for (var i =0; i < data.length; i++) {
+        console.log(data[i].name);
+    }
 });
