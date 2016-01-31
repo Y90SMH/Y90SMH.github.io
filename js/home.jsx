@@ -68,7 +68,7 @@ var Repositories = React.createClass({
 		return ( <ul>{nodes}</ul> );
 	}
 });
-var Repo = React.createClass({ render: function() { return ( <li><a href={this.props.html_url} target="_blank">{this.props.name}</a></li> ); } });
+var Repo = React.createClass({ render: function() { return ( <li><a href={this.props.html_url}>{this.props.name}</a></li> ); } });
 
 React.render(
 	<RepositoriesBox url="https://api.github.com/users/Y90SMH/repos" />,
