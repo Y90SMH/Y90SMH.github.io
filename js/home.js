@@ -7,6 +7,16 @@ fetchJSONFile('https://api.github.com/users/Y90SMH/repos', function(data){
     console.log(data);
     
     for (var i =0; i < data.length; i++) {
-        console.log(data[i].name);
+        // Create a
+        var a = document.createElement("a");
+        a.href = data[i].html_url;
+        a.innerText = data[i].name;
+        
+        // Create li
+        var li = document.createElement("li");
+        li.appendChild(a);
+        
+        // Add to Repository ul
+        document.getElementById('repositories').appendChild(li);
     }
 });
