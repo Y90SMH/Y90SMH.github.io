@@ -1,6 +1,3 @@
 Y90SMH.github.io
-================
-Public website of Mr Sean Holcroft.
-===================================
-seanholcroft.co.uk
-==================
+
+View site: https://seanholcroft.co.uk
