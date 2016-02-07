@@ -1,0 +1,8 @@
+# Build settings
+markdown: kramdown
+
+# Site settings
+description: "Back–End Web Developer at Delineo, Code Club Volunteer and STEM Ambassador."
+github_username:  Y90SMH
+title: "Sean Holcroft"
+url: "https://seanholcroft.co.uk" # e.g. https://www.example.com

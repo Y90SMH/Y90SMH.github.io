@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sean Holcroft</title>
+    <description>Back–End Web Developer at Delineo, Code Club Volunteer and STEM Ambassador.</description>
+    <link>https://seanholcroft.co.uk/</link>
+    <atom:link href="https://seanholcroft.co.uk/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Sun, 07 Feb 2016 17:11:34 +0000</pubDate>
+    <lastBuildDate>Sun, 07 Feb 2016 17:11:34 +0000</lastBuildDate>
+    <generator>Jekyll v2.4.0</generator>
+    
+  </channel>
+</rss>
