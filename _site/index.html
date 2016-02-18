@@ -6,8 +6,8 @@
     <link href="/css/main.css" rel="stylesheet">
     <link href="https://seanholcroft.co.uk/" rel="canonical">
     <meta charset="utf-8">
-    <meta content="default-src 'none'; connect-src https://api.github.com; img-src 'self'; script-src 'sha256-ow876zNtDJfVmEVY0yo/mll9mP3NZ9h4fifCgI5+A64='; style-src 'self';" http-equiv="Content-Security-Policy">
-    <meta content="default-src 'none'; connect-src https://api.github.com; img-src 'self'; script-src 'sha256-ow876zNtDJfVmEVY0yo/mll9mP3NZ9h4fifCgI5+A64='; style-src 'self';" http-equiv="X-Content-Security-Policy">
+    <meta content="default-src 'none'; connect-src https://api.github.com; img-src 'self'; script-src 'sha256-vOeQv9ziZtP2e5I20gFbpZqwsJ9UZBAY4E+yKHcS/Ik='; style-src 'self';" http-equiv="Content-Security-Policy">
+    <meta content="default-src 'none'; connect-src https://api.github.com; img-src 'self'; script-src 'sha256-vOeQv9ziZtP2e5I20gFbpZqwsJ9UZBAY4E+yKHcS/Ik='; style-src 'self';" http-equiv="X-Content-Security-Policy">
     <meta content="Sean Holcroft" name="author">
     <meta content="Back–End Web Developer at Delineo, Code Club Volunteer and STEM Ambassador." name="description">
     <meta content="width=device-width, initial-scale=1" name="viewport">
@@ -54,7 +54,7 @@
         <p>I have a few public repositories, feel free to <a href="https://github.com/Y90SMH?tab=repositories">view them on Github</a>.</p>
     </div>
 </div>
-<script type="text/javascript">"use strict";function fetchJSONFile(path,callback){var httpRequest=new XMLHttpRequest();httpRequest.onreadystatechange=function(){if(httpRequest.readyState===4){if(httpRequest.status===200){var data=JSON.parse(httpRequest.responseText);if(callback)callback(data);}}};httpRequest.open('GET',path);httpRequest.send();}fetchJSONFile('https://api.github.com/users/Y90SMH/repos',function(data){var id='repositories';document.getElementById(id).remove();var ul=document.createElement('ul');ul.id=id;var title=document.getElementById('repository-title');if(title.nextSibling){title.parentNode.insertBefore(ul,title.nextSibling);}else{title.parentNode.appendChild(ul);}for(var i=0;i<data.length;i++){var a=document.createElement('a');a.href=data[i].html_url;a.innerText=data[i].name;var li=document.createElement('li');li.appendChild(a);document.getElementById(id).appendChild(li);}});</script>
+<script type="text/javascript">"use strict";function fetchJSONFile(path,callback){var httpRequest=new XMLHttpRequest();httpRequest.onreadystatechange=function(){if(httpRequest.readyState===4){if(httpRequest.status===200){var data=JSON.parse(httpRequest.responseText);if(callback)callback(data);}}};httpRequest.open('GET',path);httpRequest.send();}fetchJSONFile('https://api.github.com/users/Y90SMH/repos',function(data){var id='repositories';document.getElementById(id).remove();var ul=document.createElement('ul');ul.id=id;var title=document.getElementById('repository-title');if(title.nextSibling){title.parentNode.insertBefore(ul,title.nextSibling);}else{title.parentNode.appendChild(ul);}for(var i=0;i<data.length;i++){var a=document.createElement('a');a.href=data[i].html_url;if(typeof a.textContent!=="undefined"){a.textContent=data[i].name;}else{a.innerText=data[i].name;}var li=document.createElement('li');li.appendChild(a);document.getElementById(id).appendChild(li);}});</script>
       </div>
     </section>
     <footer class="site-footer">
