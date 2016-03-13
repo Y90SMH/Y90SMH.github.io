@@ -146,6 +146,45 @@ pre {
     fill: #828282; }
 
 /**
+ * Forms
+ */
+label {
+  display: block;
+  height: 2em;
+  line-height: 2em; }
+
+.input {
+  background-color: #FFFFFF;
+  border: 2px solid #DDDDDD;
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: block;
+  line-height: 1.5em;
+  margin: 0 0 2em 0;
+  outline: none;
+  padding: 1em;
+  width: 100%; }
+
+input[name=_gotcha] {
+  display: none; }
+
+textarea {
+  height: 12em; }
+
+.button {
+  background-color: #732690;
+  border: 2px solid #DDDDDD;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: block;
+  font-size: 1em;
+  line-height: 2em;
+  margin: 0 0 2em 0;
+  outline: none;
+  padding: 0.5em 1em; }
+
+/**
  * Site header
  */
 .site-header {
