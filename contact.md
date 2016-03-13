@@ -14,7 +14,7 @@ If you have any questions, queries or feedback feel free to get in touch, I aim 
     <label for="message">Message:</label>
     <textarea class="input" id="message" name="message" placeholder="Your message"></textarea>
     <input class="hide" name="_gotcha" type="text">
-    <input name="_next" type="hidden" value="https://seanholcroft.co.uk/thanks.html">
+    <input name="_next" type="hidden" value="https://seanholcroft.co.uk/thanks/">
     <input name="_subject" type="hidden" value="Contact Form [/contact/]">
     <input class="button" type="submit" value="Send message">
 </form>
