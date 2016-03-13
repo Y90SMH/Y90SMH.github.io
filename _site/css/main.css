@@ -172,6 +172,7 @@ textarea {
   height: 12em; }
 
 .button {
+  -webkit-appearance: none;
   background-color: #732690;
   border: 2px solid #DDDDDD;
   border-radius: 4px;
