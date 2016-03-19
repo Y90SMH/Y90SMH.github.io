@@ -1,11 +1,11 @@
 <head>
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-    <link href="{{ "/favicon.ico" | prepend: site.baseurl }}" rel="icon">
-    <link href="{{ "/css/main.css" | prepend: site.baseurl }}" rel="stylesheet">
-    <link href="{{ page.url | replace:'index.html','' | prepend: site.url }}" rel="canonical">
     <meta charset="utf-8">
-    <meta content="default-src 'none'; connect-src https://api.github.com; form-action https://formspree.io; script-src 'sha256-vOeQv9ziZtP2e5I20gFbpZqwsJ9UZBAY4E+yKHcS/Ik='; style-src 'self'; upgrade-insecure-requests;" http-equiv="Content-Security-Policy">
+    <meta content="default-src 'none'; connect-src https://api.github.com; form-action https://formspree.io; script-src 'self'; style-src 'self'; upgrade-insecure-requests;" http-equiv="Content-Security-Policy">
     <meta content="Sean Holcroft" name="author">
     <meta content="{{ site.description }}" name="description">
     <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="{{ "/favicon.ico" | prepend: site.baseurl }}" rel="icon">
+    <link href="{{ "/css/main.css" | prepend: site.baseurl }}" rel="stylesheet">
+    <link href="{{ page.url | replace:'index.html','' | prepend: site.url }}" rel="canonical">
 </head>
