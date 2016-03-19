@@ -6,7 +6,7 @@ permalink: /contact/
 
 If you have any questions, queries or feedback feel free to get in touch, I aim to reply within 3 days.
 
-<form action="https://formspree.io/&#0105;&#0110;&#0102;&#0111;&#0064;&#0115;&#0101;&#0097;&#0110;&#0104;&#0111;&#0108;&#0099;&#0114;&#0111;&#0102;&#0116;&#0046;&#0099;&#0111;&#0046;&#0117;&#0107;" method="post">
+<form action="https://formspree.io/&#121;90&#115;&#109;&#104;&#64;&#111;&#117;&#116;&#108;&#111;&#111;&#107;&#46;&#99;&#111;&#109;" method="post">
     <label for="name">Name:</label>
     <input class="input" id="name" name="name" placeholder="Your name" required="required" type="text">
     <label for="email">Email:</label>
