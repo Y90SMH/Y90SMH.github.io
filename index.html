@@ -8,7 +8,7 @@ layout: default
 <ul>
     {% for repo in site.github.public_repositories %}
         {% if repo.fork != true %}
-            <li><a href="{{ repo.homepage }}">{{ repo.name }}</a></li>
+            <li><a href="{{ repo.html_url }}">{{ repo.name }}</a></li>
         {% endif %}
     {% endfor %}
 </ul>
