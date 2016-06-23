@@ -12,12 +12,12 @@ Pupil websites will be added to this site after our Website classes begin in the
 
 ### Projects from 2015
 * [Arron](bennetta)
-* [Oliver](crofto)
 * [Charlie](cromptonc)
-* [William](hargreavesw)
-* [Codie](heesomc)
-* [Michael](isherwoodm)
-* [Errin](murphye)
-* [Edwin](ratcliffee)
 * [Christian](smithc)
+* [Codie](heesomc)
+* [Edwin](ratcliffee)
+* [Errin](murphye)
 * [Harry](turnerh)
+* [Michael](isherwoodm)
+* [Oliver](crofto)
+* [William](hargreavesw)
