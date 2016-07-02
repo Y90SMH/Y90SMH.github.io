@@ -8,6 +8,7 @@ Pupil websites will be added to this site after our Website classes begin in the
 
 ### Projects from 2016
 * [Anna](6YcZVljYy7IMwzPAwY8EYs5B)
+* [Ben](Q8ApN1UJD9YwhPdIENl5QM2h)
 * [Charlie](QzcH3ISS54E4ca3Cd7HrfeNr)
 * [Fern](83TMb5WUjsKq3gOWRT11kUyb)
 * [Sam](uSkwqDubHS66LMVBZBs225pT)
