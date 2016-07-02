@@ -10,6 +10,7 @@ Pupil websites will be added to this site after our Website classes begin in the
 * [Anna](6YcZVljYy7IMwzPAwY8EYs5B)
 * [Charlie](QzcH3ISS54E4ca3Cd7HrfeNr)
 * [Fern](83TMb5WUjsKq3gOWRT11kUyb)
+* [Sam](uSkwqDubHS66LMVBZBs225pT)
 
 ### Projects from 2015
 * [Arron](bennetta)
