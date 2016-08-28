@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en-GB">
   <head>
-    <title>Contact</title>
+    <title>JavaScript Password Generator</title>
     <meta charset="utf-8">
     <meta content="default-src 'none'; form-action 'self' https://formspree.io; img-src 'self'; script-src 'self'; style-src 'self';" http-equiv="Content-Security-Policy">
     <meta content="Sean Holcroft" name="author">
     <meta content="ASP.NET Developer, Code Club Volunteer and STEM Ambassador." name="description">
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <link href="https://seanholcroft.co.uk/contact/" rel="canonical">
+    <link href="https://seanholcroft.co.uk/demo/javascript-password-generator/" rel="canonical">
     <link href="/favicon.ico" rel="icon">
     <link href="/css/main.css" rel="stylesheet">
 </head>
@@ -67,23 +67,24 @@
       <div class="wrapper">
         <div class="post">
   <header class="post-header">
-    <h1 class="post-title">Contact</h1>
+    <h1 class="post-title">JavaScript Password Generator</h1>
   </header>
   <article class="post-content">
-    <p>If you have any questions, queries or feedback feel free to get in touch, I aim to reply within 3 days.</p>
-
-<form action="https://formspree.io/&#121;90&#115;&#109;&#104;&#64;&#111;&#117;&#116;&#108;&#111;&#111;&#107;&#46;&#99;&#111;&#109;" method="post">
-    <label for="name">Name:</label>
-    <input class="input" id="name" name="name" placeholder="Your name" required="required" type="text" />
-    <label for="email">Email:</label>
-    <input class="input" id="email" name="_replyto" placeholder="Your email" required="required" type="email" />
-    <label for="message">Message:</label>
-    <textarea class="input" id="message" name="message" placeholder="Your message" required="required"></textarea>
-    <input class="hide" name="_gotcha" type="text" />
-    <input name="_next" type="hidden" value="https://seanholcroft.co.uk/thanks/" />
-    <input name="_subject" type="hidden" value="Contact Form [/contact/]" />
-    <input class="button" type="submit" value="Send message" />
+    <form id="passwordGenerator">
+    <label for="passwordLength">Password Length:</label>
+    <input class="input" id="passwordLength" max="254" min="1" required="required" type="number" value="24" />
+    <span class="spanCheckbox">
+        <input id="displayPhonetic" type="checkbox" />
+        <label class="labelCheckbox" for="displayPhonetic">Show Phonetic Words</label>
+    </span>
+    <button id="generatePassword" type="button">Generate Password</button>
+    <hr />
+    <label for="generatedPassword">Generated Password: </label>
+    <input class="input" id="generatedPassword" type="text" />
+    <p id="phoneticPassword"></p>
 </form>
+<script defer="" src="/demo/javascript-password-generator.js" type="text/javascript"></script>
+
 
   </article>
 </div>

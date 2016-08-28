@@ -22,7 +22,10 @@ body {
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
 }
-
+hr {
+    border: 1px solid #DDDDDD;
+    margin: 30px 0 20px 0;
+}
 
 
 /**
@@ -218,8 +221,22 @@ label {
     display: block;
     height: 2em;
     line-height: 2em;
+
+    &:hover { cursor: pointer; }
+    &.labelCheckbox {
+        display: block;
+        float: left;
+        line-height: 36px;
+        width: 210px;
+    }
 }
 
+.spanCheckbox{
+    display: block;
+    height: 46px;
+    margin: 0;
+    width: 100%;
+}
 .input {
     background-color: #FFFFFF;
     border: 2px solid #DDDDDD;
@@ -231,19 +248,33 @@ label {
     outline: none;
     padding: 1em;
     width: 100%;
+
+    &#generatedPassword { font-family: monospace; }
 }
 input[name=_gotcha] { display: none; }
+input[type=checkbox]{
+    background: none;
+    border: 2px solid #DDDDDD;
+    display: block;
+    float: left;
+    height: 36px;
+    margin: 0 10px 10px 0;
+    outline: none;
+    padding: 0;
+    width: 20px;
+}
 textarea {
     height: 12em;
 }
 
-.button {
+button, .button {
     -webkit-appearance: none;
     background-color: #732690;
     border: 2px solid #DDDDDD;
     border-radius: 4px;
     box-sizing: border-box;
     color: #FFFFFF;
+    cursor: pointer;
     display: block;
     font-size: 1em;
     line-height: 2em;
