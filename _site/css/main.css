@@ -76,7 +76,7 @@ a {
   a#skip-link {
     display: none; }
   a:visited {
-    color: #1756a9; }
+    color: #6da4eb; }
   a:hover {
     color: #111;
     text-decoration: underline; }
@@ -385,6 +385,20 @@ button, .button {
     @media screen and (max-width: 800px) {
       .post-content h4 {
         font-size: 18px; } }
+
+.list_blog {
+  list-style: none;
+  margin: 0; }
+
+.list--item {
+  margin-bottom: 1.5em; }
+
+.list--item--title {
+  margin: 0; }
+
+.grayscale {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); }
 
 /**
  * Syntax highlighting styles
