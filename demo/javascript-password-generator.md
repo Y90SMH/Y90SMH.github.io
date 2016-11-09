@@ -15,7 +15,9 @@ exclude: true
     <button id="generatePassword" type="button">Generate Password</button>
     <hr>
     <label for="generatedPassword">Generated Password: </label>
-    <input class="input" id="generatedPassword" type="text">
+    <input class="input input-meter" id="generatedPassword" type="text">
+    <meter id="generatedPasswordStrengthMeter" max="4" value="0"></meter>
     <p id="phoneticPassword"></p>
 </form>
+<script defer src="/demo/zxcvbn.js" type="text/javascript"></script>
 <script defer src="/demo/javascript-password-generator.js" type="text/javascript"></script>
