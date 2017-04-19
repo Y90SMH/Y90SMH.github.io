@@ -18,6 +18,8 @@ DefaultLanguage en-GB
 	Header unset Accept-Ranges
 	Header unset Server
 	Header unset X-Pingback
+    Header set Content-Security-Policy: "default-src 'none'; form-action 'self' https://formspree.io; img-src 'self'; script-src 'self'; style-src 'self';"
+    Header set Referrer-Policy: no-referrer
 	Header set X-Content-Type-Options: nosniff
 	Header set X-Frame-Options: DENY
 	Header set X-XSS-Protection: "1; mode=block"
